@@ -1,0 +1,100 @@
+.header{
+    width: 95%;
+    padding:0.3em;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.cta-header{
+    height: 4em;
+    background-color: rgb(71, 43, 228);
+    text-align: center;
+    border-radius: 5px 5px 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0 0.5em;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.logo-marca{
+    display: flex;
+    align-items: center;
+}
+.logo-marca > span{
+    font-weight: bold;
+}
+.list-itens-menu{
+    font-size: 0.8rem;
+    list-style: none;
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+}
+.btn-menu-mobile{
+    display: none;
+}
+.nav-mobile{
+    display: none;
+}
+.list-itens-menu-mobile{
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    background-color: rgba(133, 133, 133, 0.267);
+    padding: 0.8em;
+    position: fixed;
+    top: 60px;
+    right: 1em;
+    width: 150px;
+}
+.list-itens-menu-mobile li{
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+.btn-div{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
+}
+@media(max-width: 1000px){
+    .nav-mobile.active{
+    display: block;
+    z-index: 999;
+    position: fixed;
+
+}
+    .nav-desktop{
+        display: none;
+    }
+    .cta-header > span{
+        display: none;
+    }
+    .btn-menu-mobile{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+@media(max-width: 600px){
+    .header{
+        width: 90%;
+    }
+    .logo-marca .logo{
+        width: 40px;
+        height: 40px;
+    }
+}

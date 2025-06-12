@@ -1,0 +1,82 @@
+
+.carousel-track{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  background: linear-gradient(180deg, black, rgba(32, 0, 32, 0.534), rgb(0, 0, 0));
+}
+.carousel-track ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  width: 800px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.carousel-track h3 {
+  font-size: 1.5em;
+}
+.carousel-track ul li{
+  animation: scroll 10s ease-in-out infinite alternate;
+}
+.logo-ads{
+  filter: grayscale(100%);
+}
+.list-comentario{
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  width: 90%;
+}
+.card-comentario{
+  background-color: rgb(17, 17, 17);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 68, 68);
+  padding: 0.8em;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  margin-bottom: 2em;
+}
+.card-comentario.flip {
+  transform: rotateY(180deg);
+}
+.card-comentario > p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: rgb(192, 192, 192);
+}
+.id-user{
+  font-size: 0.8em;
+  color: rgb(128, 128, 128);
+}
+.card-pessoa{
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+.profile-photo{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: linear-gradient(160deg,rgba(71, 1, 233, 0.842), rgb(129, 0, 129));
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(250%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+@media (max-width: 1300px) {
+    .card-comentario{
+    }
+}

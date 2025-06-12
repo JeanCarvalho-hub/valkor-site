@@ -1,0 +1,12 @@
+.section-about{
+    height: 100vh;
+    color: rgb(233, 233, 233);
+    width: 98%;
+    padding: 0.8em 3em;
+    margin: auto;
+    border-radius: 10px;
+}
+.section-about > h2{
+    font-size: 2em;
+    text-align: center;
+}
