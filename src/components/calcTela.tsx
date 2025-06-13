@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Comentarios from "./comentario";
+import ComentarioScroll from "./comentarioScroll";
 export default function CalcTela(){
     const [tela, setTela] = useState(0);
     useEffect(() => {
@@ -16,7 +17,7 @@ export default function CalcTela(){
     }, [])
     return(
         <>    
-            {tela > 1300 ? (<Comentarios/>) : (<p>tela pequena</p>)}
+            {tela > 1120 ? (<Comentarios/>) : (<ComentarioScroll/>)}
         </>
     );
 }

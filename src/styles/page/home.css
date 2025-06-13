@@ -72,7 +72,7 @@
 .conteudo > h1 {
     font-size: 2em;
     margin-bottom: 0.3em;
-    color: rgb(225, 209, 255);
+    color: rgb(232, 221, 253);
 }
 .conteudo > p {
     font-size: 0.8em;
@@ -106,6 +106,7 @@
 }
 /* Telas médias (tablets) */
 @media (max-width: 1024px) {
+
   .conteudo {
     width: 70%;
   }

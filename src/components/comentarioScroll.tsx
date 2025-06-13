@@ -37,9 +37,6 @@ const grupoA: Comentario[] = [
     texto:
       "Melhor serviço que contratei nos últimos anos! Já indiquei para vários amigos.",
   },
-];
-
-const grupoB: Comentario[] = [
   {
     nome: "Maria Eduarda",
     user: "maria_edu",
@@ -71,56 +68,24 @@ const grupoB: Comentario[] = [
       "Não esperava tanto, foi além! Atendimento atencioso e resultado maravilhoso.",
   },
 ];
-export default function Comentarios() {
-  const [comentarios, setComentarios] = useState<Comentario[]>(grupoA);
-  const [flipIndex, setFlipIndex] = useState<number | null>(null);
-  const [usandoGrupoA, setUsandoGrupoA] = useState(true);
 
-  const trocarEmSequencia = (origem: Comentario[], destino: Comentario[]) => {
-    destino.forEach((novo, i) => {
-      setTimeout(() => {
-        setFlipIndex(i); // ativa o flip
-        setTimeout(() => {
-          setComentarios((prev) => {
-            const novoArray = [...prev];
-            novoArray[i] = novo;
-            return novoArray;
-          });
-          setFlipIndex(null); // remove o flip
-        }, 300); // tempo do flip
-      }, i * 1000); // atraso entre cada troca
-    });
-  };
-
-  useEffect(() => {
-    const intervalo = setInterval(() => {
-      trocarEmSequencia(
-        usandoGrupoA ? grupoA : grupoB,
-        usandoGrupoA ? grupoB : grupoA
-      );
-      setUsandoGrupoA((prev) => !prev);
-    }, 12000); // troca de grupo a cada 12s
-
-    return () => clearInterval(intervalo);
-  }, [usandoGrupoA]);
-
+export default function ComentariosScroll() {
   return (
-    <div className="list-comentario">
-      {comentarios.map((coment, i) => (
-        <div
-          key={i}
-          className={`card-comentario ${flipIndex === i ? "flip" : ""}`}
-        >
-          <div className="card-pessoa">
-            <div className="profile-photo"></div>
-            <div>
-              <p>{coment.nome}</p>
-              <p className="id-user">@{coment.user}</p>
+    <div className="comentarios-carousel-container">
+      <div className="comentarios-carousel-track">
+        {grupoA.map((coment, i) => (
+          <div key={i} className="comentario-card-carousel">
+            <div className="comentario-pessoa-carousel">
+              <div className="comentario-profile-carousel"></div>
+              <div>
+                <p className="comentario-nome-carousel">{coment.nome}</p>
+                <p className="comentario-user-carousel">@{coment.user}</p>
+              </div>
             </div>
+            <p className="comentario-texto-carousel">{coment.texto}</p>
           </div>
-          <p>{coment.texto}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

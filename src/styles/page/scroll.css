@@ -1,11 +1,13 @@
-
+.carousel{
+  margin-top: 0.8em;
+}
 .carousel-track{
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 400px;
-  background: linear-gradient(180deg, black, rgba(32, 0, 32, 0.534), rgb(0, 0, 0));
+  background: linear-gradient(180deg, black, rgba(52, 1, 99, 0.322), rgb(0, 0, 0));
 }
 .carousel-track ul{
   display: flex;
@@ -36,7 +38,7 @@
 .card-comentario{
   background-color: rgb(17, 17, 17);
   width: 300px;
-  height: 200px;
+  height: 150px;
   border-radius: 10px;
   border: 1px solid rgb(68, 68, 68);
   padding: 0.8em;
@@ -45,7 +47,7 @@
   margin-bottom: 2em;
 }
 .card-comentario.flip {
-  transform: rotateY(180deg);
+  transform: rotateX(-100deg);
 }
 .card-comentario > p {
   margin-top: 0.5em;
@@ -76,7 +78,19 @@
     transform: translateX(-150%);
   }
 }
-@media (max-width: 1300px) {
+@keyframes scrollComentarios {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+@media (max-width: 1400px) {
     .card-comentario{
+      width: 350px;
+    }
+    .card-comentario > p{
+      font-size: 0.8em;
     }
 }

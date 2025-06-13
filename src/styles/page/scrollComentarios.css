@@ -1,0 +1,65 @@
+/* Comentários Scroll Mobile - Carrossel Infinito */
+.comentarios-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.comentarios-carousel-track {
+  display: flex;
+  gap: 0.8em;
+  width: 50%;
+  animation: comentariosScrollLoop 120s linear infinite alternate;
+}
+
+.comentario-card-carousel {
+  flex: 0 0 auto;
+  background-color: rgb(17, 17, 17);
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 68, 68);
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.comentario-pessoa-carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+.comentario-profile-carousel {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: linear-gradient(160deg, rgba(71, 1, 233, 0.842), rgb(129, 0, 129));
+}
+
+.comentario-nome-carousel {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: white;
+}
+
+.comentario-user-carousel {
+  font-size: 0.75em;
+  color: rgb(128, 128, 128);
+}
+
+.comentario-texto-carousel {
+  font-size: 0.8em;
+  color: rgb(192, 192, 192);
+}
+
+/* Animação */
+@keyframes comentariosScrollLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-2100%);
+  }
+}
