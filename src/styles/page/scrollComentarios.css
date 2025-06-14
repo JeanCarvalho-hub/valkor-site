@@ -9,7 +9,7 @@
   display: flex;
   gap: 0.8em;
   width: 50%;
-  animation: comentariosScrollLoop 120s linear infinite alternate;
+  animation: comentariosScrollLoop 20s linear infinite alternate;
 }
 
 .comentario-card-carousel {
@@ -60,6 +60,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-2100%);
+    transform: translateX(-1000%);
   }
 }
