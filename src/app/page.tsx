@@ -9,6 +9,7 @@ import About from "@/components/about";
 import "@/styles/page/main.css"
 import Scroll from "@/components/scroll";
 import Project from "@/components/projetos";
+import Servicos from "@/components/Servicos";
 
 export default function Page(){
     const [estado, setEstado] = useState(false);
@@ -20,6 +21,7 @@ export default function Page(){
                 <Home/>
                 <Scroll/>
                 <Project/>
+                <Servicos/>
             </main>
         </CounterContext.Provider>
     );

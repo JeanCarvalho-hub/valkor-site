@@ -15,3 +15,46 @@ html, body{
     overflow-x: hidden;
     color: white;
 }
+@font-face {
+  font-family: "ubunto";
+  src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hedvig";
+  src: url("/fonts/Hedvig/HedvigLettersSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tomorrow";
+  src: url("/fonts/Tomorrow/Tomorrow-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Turret";
+  src: url("/fonts/Turret_Road/TurretRoad-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aldrich";
+  src: url("/fonts/Aldrich/Aldrich-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Share_Tech";
+  src: url("/fonts/Share_Tech/ShareTech-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anta";
+  src: url("/fonts/Anta/Anta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

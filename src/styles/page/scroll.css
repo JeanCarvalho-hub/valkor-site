@@ -16,12 +16,16 @@
   list-style: none;
   position: relative;
   z-index: 1;
-  width: 800px;
+  width: 80%;
   overflow: hidden;
   border-radius: 100px;
+  margin-bottom: -1em;
 }
 .carousel-track h3 {
-  font-size: 1.5em;
+  font-family: "Tomorrow", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: -1em;
 }
 .carousel-track ul li{
   animation: scroll 10s ease-in-out infinite alternate;
@@ -72,7 +76,7 @@
 
 @keyframes scroll {
   0% {
-    transform: translateX(250%);
+    transform: translateX(150%);
   }
   100% {
     transform: translateX(-150%);
@@ -83,7 +87,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-150%);
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 1400px) {

@@ -3,7 +3,6 @@ import "@/styles/page/scroll.css"
 import "@/styles/page/scrollComentarios.css"
 
 import DivisorBottom from "./div2";
-import Comentarios from "./comentario";
 import CalcTela from "./calcTela";
 
 export default function Scroll(){

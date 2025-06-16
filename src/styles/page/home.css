@@ -70,9 +70,12 @@
   box-sizing: border-box;
 }
 .conteudo > h1 {
-    font-size: 2em;
+    font-size: 2.3em;
+    font-weight: normal;
+    letter-spacing: 2;
     margin-bottom: 0.3em;
     color: rgb(232, 221, 253);
+    font-family: "Anta", sans-serif;
 }
 .conteudo > p {
     font-size: 0.8em;
