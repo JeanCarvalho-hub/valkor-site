@@ -28,6 +28,12 @@
     padding: 0 0.5em;
     font-weight: bold;
     font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-div a:hover{
+    background-color: rgb(34, 15, 143);
 }
 .logo-marca{
     display: flex;
@@ -67,8 +73,16 @@
 .btn-div{
     display: flex;
     align-items: center;
-    gap: 0.3em;
-
+    gap: 0.5em;
+}
+.a-menu{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    transition: all 0.3s ease;
+    font-family: "Tomorrow", sans-serif;
+}
+.a-menu:hover{
+    color: rgb(255, 255, 255);
 }
 @media(max-width: 1000px){
     .nav-mobile.active{

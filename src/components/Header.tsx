@@ -19,11 +19,11 @@ export default function Header(){
             <a className="logo-marca"><Image src="/logo-grande.png" alt="valkor" width={50} height={50} className="logo"/><span>Valkor</span></a>
             <nav className="nav-desktop">
                 <ul className="list-itens-menu">
-                    <li>Início</li>
-                    <li>Sobre nós</li>
-                    <li>Projetos</li>
-                    <li>Planos</li>
-                    <li>Contato</li>
+                    <li><a href="#Home" className="a-menu">Início</a></li>
+                    <li><a href="#About" className="a-menu">Sobre nós</a></li>
+                    <li><a href="#Projects" className="a-menu">Projetos</a></li>
+                    <li><a href="#Services" className="a-menu">Planos</a></li>
+                    <li><a href="#Contact" className="a-menu">Contato</a></li>
                 </ul>
             </nav>
             <nav className={`nav-mobile ${estado ? 'active' : ''}`}>
@@ -37,7 +37,7 @@ export default function Header(){
             </nav>
             <div className="btn-div">
                 <Image src="/menu-icone.png" alt="" width={20} height={20} className="btn-menu-mobile" onClick={activeMenu}/>
-                <a className="cta-header"><Image src="/whatsapp50.png" alt="whatsapp" width={20} height={20}/><span>Contrate agora</span></a>
+                <a className="cta-header" href="https://wa.me/5516992573047?text=Oi%2C%20gostei%20muito%20da%20ideia%20e%20quero%20saber%20mais!"><Image src="/whatsapp50.png" alt="whatsapp" width={20} height={20}/><span>Contrate agora</span></a>
             </div>
         </header>
     );

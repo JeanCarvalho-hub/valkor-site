@@ -1,12 +1,154 @@
 .section-about{
-    height: 100vh;
     color: rgb(233, 233, 233);
-    width: 98%;
-    padding: 0.8em 3em;
-    margin: auto;
-    border-radius: 10px;
+    margin: 10em auto 0;
+    padding: 0 0 3em;
 }
 .section-about > h2{
     font-size: 2em;
     text-align: center;
+}
+.div-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.div-about-text{
+    width: 35%;
+}
+
+.div-about-text > h2{
+    font-family: "Anta", sans-serif;
+    font-size: 3em;
+}
+.div-about-text > p{
+    font-family: "ubunto", sans-serif;
+    color: rgb(187, 187, 187);
+}
+.banner-about{
+    border-radius: 5px;
+}
+.btn-about{
+    display: block;
+    width: fit-content;
+    background: linear-gradient(180deg, rgba(238, 213, 252, 0.973), rgb(251, 248, 252));    
+    color: rgb(33, 0, 53);
+    font-family: "Tomorrow", sans-serif;
+    padding: 0.8em;
+    margin-top: 2em;
+    border-radius: 5px;
+}
+.bloco-equipe{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+}
+.text-equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1em;
+    background: linear-gradient(180deg, rgba(115, 2, 138, 0.007),black, rgba(37, 0, 54, 0.637));
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 0, 128);
+box-shadow: 
+    4px 4px 1px rgba(38, 0, 46, 0.952),
+    6px 6px 1px purple;
+  position: relative;
+}
+.jean{
+    animation: jean 1s ease-in-out infinite alternate;
+
+}
+.diogo{
+    animation: diogo 1s ease-in-out infinite alternate;
+}
+.davi{
+    animation: davi 1s ease-in-out infinite alternate;
+
+}
+.text-equipe i {
+    font-style: normal;
+    font-family: "Anta", sans-serif;
+    font-weight: normal;
+}
+.text-equipe i span{
+    font-size: 0.8em;
+    font-family: "Tomorrow", sans-serif;
+    color: rgb(255, 2, 255);
+}
+.line-1{
+    display: flex;
+    gap: 1em;
+}
+@keyframes jean {
+    0%{
+        top: -40px;
+
+    }
+    100%{
+        top: -30px;
+    }
+}
+@keyframes diogo {
+    0%{
+        top: 2px;
+
+    }
+    100%{
+        top: -10px;
+    }
+}
+@keyframes davi {
+    0%{
+        top: -10px;
+
+    }
+    100%{
+        top: -5px;
+    }
+}
+
+@media(max-width: 1000px){
+    .div-about-text{
+        width: 90%;
+    }
+    .div-about-text > h2 {
+        font-size: 2em;
+    }
+    .div-about-text > p{
+        font-size: 0.9em;
+    }
+    .bloco-equipe{
+        margin-top: 5em;
+    }
+}
+@media(max-width: 800px){
+    .section-about{
+        margin-top: 5em;
+    }
+    .div-about-text > h2 {
+        font-size: 2em;
+    }
+    .div-about-text > p{
+        font-size: 0.8em;
+    }
+    .text-equipe{
+        width: 150px;
+        height: 100px;
+    }
+    .text-equipe i {
+        font-size: 0.9em;
+}
+    .text-equipe i span{
+        font-size: 0.6em;
+    }
+    .btn-about{
+        font-size: 0.9em;
+    }
 }

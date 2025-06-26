@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import "@/styles/page/servicos.css";
+import DivisorBottom from "./div3";
+import Services from "./services";
 
 export default function Servicos() {
   useEffect(() => {
@@ -26,10 +28,13 @@ export default function Servicos() {
   }, []);
 
   return (
-    <section className="background">
+    <section id="Services" className="servicos">
       <div id="dot-container" />
-      <div className="content">
-        <h1>Seu conteúdo aqui</h1>
+        <DivisorBottom/>
+        <div className="content">
+            <h3>Nossos Serviços</h3>
+            <h2>Criamos Experiências que Conectam</h2>
+        <Services/>
       </div>
     </section>
   );

@@ -24,4 +24,9 @@
         min-height: 5vh;
         object-fit: cover;
     }
+    .divisor-bottom img{
+        min-width: 100vw;
+        min-height: 5vh;
+        object-fit: cover;
+    }
 }

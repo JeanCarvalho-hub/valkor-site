@@ -1,0 +1,124 @@
+.contato{
+    position: relative;
+}
+.background-contato {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background: radial-gradient(circle at 30% 30%, #2d0036, #c00090);
+
+}
+
+.blob-contato{
+  position: absolute;
+  width: clamp(500px, 100vw, 700px);
+  height: clamp(500px, 100vw, 700px);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.7;
+  animation: move 5s infinite alternate ease-in-out;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+/* Blob 1 */
+.blob-contato-1 {
+  top: 50%;
+  left: 40%;
+  background: radial-gradient(circle at 30% 30%, #270041, #6b00d6);
+  animation-delay: 0s;
+}
+
+/* Blob 2 */
+.blob-contato-2 {
+  top: 60%;
+  left: 70%;
+  background: radial-gradient(circle at 30% 30%, #4c0053, #450094);
+  animation-delay: 2s;
+}
+
+/* Blob 3 */
+.blob-contato-3 {
+  top: 20%;
+  left: 80%;
+  background: radial-gradient(circle at 30% 30%, #b3009b, #140138f5);
+  animation-delay: 2s;
+}
+.text-contato{
+    position: relative;
+    z-index: 997;
+    text-align: center;
+}
+.text-contato h2{
+    width: 400px;
+    font-size: 3em;
+    font-family: "Anta", sans-serif;
+    padding: 1em 0 0.8em;
+    margin: auto;
+}
+.btn-div-contato nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.btn-div-contato nav a{
+    display: block;
+    width: 12em;
+    height: 4em;
+    padding: 1.3em 0;
+    background-color: #11001d;
+    text-decoration: none;
+    color: white;
+    font-family: "Tomorrow", sans-serif;
+    border-radius: 10px;
+    border: 1px solid purple;
+    transition: all 0.5s ease;
+}
+.btn-div-contato nav a:hover{
+    border: 1px solid rgb(59, 0, 59);
+}
+.divisor-contato{
+    position: relative;
+    z-index: 997;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 1880px) {
+    .divisor-contato img{
+        width: 100vw;
+        min-height: 5vh;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1000px) {
+    .text-contato h2{
+        width: 50%;
+    }
+}
+@media (max-width: 530px) {
+    .text-contato h2{
+        width: 100%;
+        padding: 1em 0;
+        font-size: 2.5em;
+    }
+    .btn-div-contato nav {
+        gap: 0.8em;
+    }
+    .btn-div-contato nav a{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 450px) {
+    .btn-div-contato nav a{
+        width: 90%;
+        height: 4em;
+        font-size: 0.9em;
+        padding: 1.3em 0;
+    }
+}

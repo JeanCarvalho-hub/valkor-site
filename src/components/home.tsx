@@ -4,7 +4,7 @@ import Divisor from "./div";
 
 export default function Home() {
   return (
-    <section className="section-home">
+    <section id="Home" className="section-home">
       <div className="background">
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
@@ -16,8 +16,8 @@ export default function Home() {
         <h1>Transformamos negócios com sites que vendem, estratégias que escalam e conteúdo que converte</h1>
         <p>Seu próximo salto digital começa com um projeto feito para performar.</p>
         <div className="div-btn">
-            <a className="btn-home cta">Agendar reunião</a>
-            <a className="btn-home more">Descubra mais</a>
+            <a className="btn-home cta" href="https://wa.me/5516992573047?text=Olá%2C%20gostaria%20de%20agendar%20uma%20reunião.">Agendar reunião</a>
+            <a className="btn-home more" href="#Projects">Descubra mais</a>
         </div>
       </div>
       <Divisor/>

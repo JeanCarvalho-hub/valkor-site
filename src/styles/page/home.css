@@ -1,7 +1,7 @@
 .section-home{
   position: relative;
   width: 100%;
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
 }
 
 /* Fundo da tela */
@@ -74,7 +74,7 @@
     font-weight: normal;
     letter-spacing: 2;
     margin-bottom: 0.3em;
-    color: rgb(232, 221, 253);
+    color: rgb(249, 235, 255);
     font-family: "Anta", sans-serif;
 }
 .conteudo > p {
@@ -96,16 +96,28 @@
     text-align: center;
     padding: 1em;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 .cta{
     background: linear-gradient(135deg, #6b00ad, #5e00a5, #310073);
     border-radius: 5px;
     box-shadow: 0 2px 20px rgba(157, 0, 255, 0.3);
 }
+.cta:hover{
+  background: linear-gradient(135deg, #cd89f7, #a939ff, #7715f7);
+}
 .more{
     border: 1px solid rgba(76, 0, 255, 0.589);
     border-radius: 5px;
     background-color: #10003631;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    transition: all 0.3s ease;
+}
+.more:hover{
+  border: 1px solid rgba(135, 83, 255, 0.979);;
+  color: white;
 }
 /* Telas médias (tablets) */
 @media (max-width: 1024px) {
@@ -126,6 +138,7 @@
   }
   .conteudo > h1{
     font-size: 1.2em;
+    font-weight: bold;
 
   }
   .conteudo > p{

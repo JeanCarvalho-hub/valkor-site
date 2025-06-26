@@ -22,7 +22,6 @@ export default function Scroll(){
                 </ul>
             <CalcTela/>
             </div>
-            <DivisorBottom/>
         </div>
     );
 }
