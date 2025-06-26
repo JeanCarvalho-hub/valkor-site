@@ -66,6 +66,10 @@
     right: 1em;
     width: 150px;
 }
+.list-itens-menu-mobile a{
+    text-decoration: none;
+    color: white;
+}
 .list-itens-menu-mobile li{
     margin-bottom: 1em;
     font-size: 0.8em;

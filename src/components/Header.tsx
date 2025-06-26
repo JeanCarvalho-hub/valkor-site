@@ -20,19 +20,19 @@ export default function Header(){
             <nav className="nav-desktop">
                 <ul className="list-itens-menu">
                     <li><a href="#Home" className="a-menu">Início</a></li>
-                    <li><a href="#About" className="a-menu">Sobre nós</a></li>
                     <li><a href="#Projects" className="a-menu">Projetos</a></li>
-                    <li><a href="#Services" className="a-menu">Planos</a></li>
+                    <li><a href="#Services" className="a-menu">Serviços</a></li>
+                    <li><a href="#About" className="a-menu">Sobre nós</a></li>
                     <li><a href="#Contact" className="a-menu">Contato</a></li>
                 </ul>
             </nav>
             <nav className={`nav-mobile ${estado ? 'active' : ''}`}>
                 <ul className="list-itens-menu-mobile">
-                    <li>Início</li>
-                    <li>Sobre nós</li>
-                    <li>Projetos</li>
-                    <li>Planos</li>
-                    <li>Contato</li>
+                    <li><a href="#Home" >Início</a></li>
+                    <li><a href="#Projects" onClick={activeMenu}>Projetos</a></li>
+                    <li><a href="#Services" onClick={activeMenu}>Serviços</a></li>
+                    <li><a href="#About" onClick={activeMenu}>Sobre nós</a></li>
+                    <li><a href="#Contact" onClick={activeMenu}>Contato</a></li>
                 </ul>
             </nav>
             <div className="btn-div">
