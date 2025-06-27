@@ -28,7 +28,7 @@ export default function Header(){
             </nav>
             <nav className={`nav-mobile ${estado ? 'active' : ''}`}>
                 <ul className="list-itens-menu-mobile">
-                    <li><a href="#Home" >Início</a></li>
+                    <li><a href="#Home" onClick={activeMenu}>Início</a></li>
                     <li><a href="#Projects" onClick={activeMenu}>Projetos</a></li>
                     <li><a href="#Services" onClick={activeMenu}>Serviços</a></li>
                     <li><a href="#About" onClick={activeMenu}>Sobre nós</a></li>
@@ -37,7 +37,7 @@ export default function Header(){
             </nav>
             <div className="btn-div">
                 <Image src="/menu-icone.png" alt="" width={20} height={20} className="btn-menu-mobile" onClick={activeMenu}/>
-                <a className="cta-header" href="https://wa.me/5516992573047?text=Oi%2C%20gostei%20muito%20da%20ideia%20e%20quero%20saber%20mais!"><Image src="/whatsapp50.png" alt="whatsapp" width={20} height={20}/><span>Contrate agora</span></a>
+                <a className="cta-header" href="https://wa.me/5516992573047?text=Oi%2C%20gostei%20muito%20da%20ideia%20e%20quero%20saber%20mais!" target="_blank"><Image src="/whatsapp50.png" alt="whatsapp" width={20} height={20}/><span>Contrate agora</span></a>
             </div>
         </header>
     );

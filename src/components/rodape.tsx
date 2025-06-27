@@ -11,16 +11,15 @@ export default function Rodape(){
                 </div>
             </div>
             <ul className="link-menu">
-                <li>Inicio</li>
-                <li>Projetos</li>
-                <li>Serviços</li>
-                <li>Sobre nós</li>
-                <li>Contato</li>
+                <li><a href="#Home">Inicio</a></li>
+                <li><a href="#Projects">Projetos</a></li>
+                <li><a href="#Services">Serviços</a></li>
+                <li><a href="#About">Sobre nós</a></li>
+                <li><a href="#Contact">Contato</a></li>
             </ul>
             <ul className="link-menu">
-                <li>Whatsapp</li>
-                <li>Instagram</li>
-                <li>Linkedin</li>
+                <li><a href="https://wa.me/5516992573047?text=Oi%2C%20gostei%20muito%20da%20ideia%20e%20quero%20saber%20mais!" target="_blank">Whatsapp</a></li>
+                <li><a href="https://www.instagram.com/valkor.ong/" target="_blank">Instagram</a></li>
             </ul>
         </div>
     );

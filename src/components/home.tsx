@@ -13,10 +13,10 @@ export default function Home() {
 
       <div className="conteudo">
         <Image src="/logo-grande.png" alt="volker" width={100} height={100}/>
-        <h1>Transformamos negócios com sites que vendem, estratégias que escalam e conteúdo que converte</h1>
+        <h1><span>Transformamos negócios</span> com sites que vendem, estratégias que escalam e conteúdo que converte</h1>
         <p>Seu próximo salto digital começa com um projeto feito para performar.</p>
         <div className="div-btn">
-            <a className="btn-home cta" href="https://wa.me/5516992573047?text=Olá%2C%20gostaria%20de%20agendar%20uma%20reunião.">Agendar reunião</a>
+            <a className="btn-home cta" href="https://wa.me/5516992573047?text=Olá%2C%20gostaria%20de%20agendar%20uma%20reunião." target="_blank">Agendar reunião</a>
             <a className="btn-home more" href="#Projects">Descubra mais</a>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function About(){
                 <div className="div-about-text">
                     <h2>Quem somos</h2>
                     <p>Somos uma agência que usa a tecnologia para alavancar as empresas, desde posts estratégicos para redes sociais até artes visuais impactantes, identidade visual completa (branding), Consultoria para o seu time de venda e desenvolvimento de sites modernos e funcionais. Combinamos design criativo, comunicação eficaz e tecnologia de ponta para entregar soluções que tornam sua empresa bonita, profissional e preparada para impressionar no digital.</p>
-                    <a className="btn-about">Seguir no Instagram</a>
+                    <a className="btn-about" href="https://www.instagram.com/valkor.ong/" target="_blank"><Image src="/icone/insta.png" alt="Instagram" width={25} height={25}/>Seguir no Instagram</a>
                 </div>
                 <div className="div-equipe">
                     <div className="bloco-equipe">

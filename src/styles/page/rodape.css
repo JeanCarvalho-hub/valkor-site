@@ -25,6 +25,10 @@
     color: rgb(168, 168, 168);
     font-family: "Tomorrow", sans-serif;
 }
+.link-menu li a{
+    text-decoration: none;
+    color: inherit;
+}
 .frase{
     font-family: "Tomorrow", sans-serif;
 }

@@ -34,9 +34,17 @@
     background: linear-gradient(180deg, rgba(238, 213, 252, 0.973), rgb(251, 248, 252));    
     color: rgb(33, 0, 53);
     font-family: "Tomorrow", sans-serif;
+    font-weight: bold;
     padding: 0.8em;
     margin-top: 2em;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    text-decoration: none;
+}
+.btn-about:hover{
+    background: linear-gradient(180deg, rgba(253, 250, 255, 0.973), rgb(251, 244, 253));    
 }
 .bloco-equipe{
     display: flex;
@@ -127,6 +135,9 @@ box-shadow:
     .bloco-equipe{
         margin-top: 5em;
     }
+    .text-equipe{
+        gap: 0em;
+    }
 }
 @media(max-width: 800px){
     .section-about{
@@ -146,7 +157,7 @@ box-shadow:
         font-size: 0.9em;
 }
     .text-equipe i span{
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
     .btn-about{
         font-size: 0.9em;
