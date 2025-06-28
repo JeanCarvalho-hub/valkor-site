@@ -11,7 +11,7 @@ export default function Rodape(){
                 </div>
             </div>
             <ul className="link-menu">
-                <li><a href="#Home">Inicio</a></li>
+                <li><a href="http://localhost:3000/#Home">Inicio</a></li>
                 <li><a href="#Projects">Projetos</a></li>
                 <li><a href="#Services">Serviços</a></li>
                 <li><a href="#About">Sobre nós</a></li>
